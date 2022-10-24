@@ -121,9 +121,9 @@ public class CarControllerTest {
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(jsonPath("$.id").value(1))
                 .andExpect(jsonPath("$.price")
-                        .value("USD 6653.38"))
+                        .value(""))
                 .andExpect(jsonPath("$.location.address")
-                        .value("234 Walter Carringhton avenue"))
+                        .value("777 Brockton Avenue, Abington MA 2351"))
         );
 
 */
