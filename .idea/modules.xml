@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/P02-VehiclesAPI/eureka/.mvn/.mvn.iml" filepath="$PROJECT_DIR$/P02-VehiclesAPI/eureka/.mvn/.mvn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P02-VehiclesAPI/APIDocumentation/APIDocumentation.iml" filepath="$PROJECT_DIR$/P02-VehiclesAPI/APIDocumentation/APIDocumentation.iml" />
       <module fileurl="file://$PROJECT_DIR$/P02-VehiclesAPI/boogle-maps/boogle-maps.iml" filepath="$PROJECT_DIR$/P02-VehiclesAPI/boogle-maps/boogle-maps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P02-VehiclesAPI/eureka/eureka.iml" filepath="$PROJECT_DIR$/P02-VehiclesAPI/eureka/eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter.iml" filepath="$PROJECT_DIR$/.idea/nd035-C2-Web-Services-and-APIs-Exercises-and-Project-Starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/pricing-service.iml" filepath="$PROJECT_DIR$/P02-VehiclesAPI/pricing-service/pricing-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P02-VehiclesAPI/eureka/test/test.iml" filepath="$PROJECT_DIR$/P02-VehiclesAPI/eureka/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/vehicles-api.iml" filepath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api/vehicles-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api (1).iml" filepath="$PROJECT_DIR$/P02-VehiclesAPI/vehicles-api (1).iml" />
     </modules>
   </component>
 </project>

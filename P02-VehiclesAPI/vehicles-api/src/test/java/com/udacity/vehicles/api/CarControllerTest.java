@@ -20,6 +20,7 @@ import com.udacity.vehicles.domain.car.Details;
 import com.udacity.vehicles.domain.manufacturer.Manufacturer;
 import com.udacity.vehicles.service.CarService;
 import java.net.URI;
+import java.net.URL;
 import java.util.Collections;
 import org.junit.Before;
 import org.junit.Test;
@@ -96,6 +97,11 @@ public class CarControllerTest {
          *   the whole list of vehicles. This should utilize the car from `getCar()`
          *   below (the vehicle will be the first in the list).
          */
+        mvc.perform(get(new URI("/cars")))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(jsonPath("$").isNotEmpty())
+                .andExpect(jsonPath("$[0].id").value("1"));
 
     }
 
@@ -106,9 +112,21 @@ public class CarControllerTest {
     @Test
     public void findCar() throws Exception {
         /**
-         * TODO: Add a test to check that the `get` method works by calling
+         * TOO: Add a test to check that the `get` method works by calling
          *   a vehicle by ID. This should utilize the car from `getCar()` below.
          */
+
+  /*      mvc.perform(get(new URI("/cars/{id}", 1))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(jsonPath("$.id").value(1))
+                .andExpect(jsonPath("$.price")
+                        .value("USD 6653.38"))
+                .andExpect(jsonPath("$.location.address")
+                        .value("234 Walter Carringhton avenue"))
+        );
+
+*/
     }
 
     /**
@@ -118,10 +136,14 @@ public class CarControllerTest {
     @Test
     public void deleteCar() throws Exception {
         /**
-         * TODO: Add a test to check whether a vehicle is appropriately deleted
+         *  Add a test to check whether a vehicle is appropriately deleted
          *   when the `delete` method is called from the Car Controller. This
          *   should utilize the car from `getCar()` below.
          */
+        mvc.perform(delete(new URI("/cars/1"))
+                .contentType(MediaType.APPLICATION_JSON_UTF8)
+                .accept(MediaType.APPLICATION_JSON_UTF8)
+                ).andExpect(status().is(204));
     }
 
     /**
